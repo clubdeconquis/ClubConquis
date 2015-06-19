@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace ClubdeConquis
 {
-    public partial class Login : Form
+    public partial class Actividades : Form
     {
-        public Login()
+        public Actividades()
         {
             InitializeComponent();
         }

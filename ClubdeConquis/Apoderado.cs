@@ -43,7 +43,7 @@ namespace ClubdeConquis
                 try
                 {
 
-                    string sql = "INSERT INTO apoderadop(rutApP,nombre, apellidoPat, apellidoMat,fechaNac , direccion,cantHijos, tel, ocupacion, NivelEd, ciudadPro, nacionalidad, vinculofam)VALUES('" + txtRutInt.Text + "','" + txtNomInt.Text + "', '" + txtApPInt.Text + "', '" + txtApMInt.Text + "', '" + txtDom.Text + "', '" + fechNacInt.Text + "', '" + txtTelInt.Text + "', '" + txtActivo.Text + "')";
+                    string sql = "INSERT INTO apoderadop(rutApP,nombre, apellidoPat, apellidoMat,fechaNac , direccion,cantHijos, tel, ocupacion, NivelEd, ciudadPro, nacionalidad, vinculofam)VALUES ('" + txtRutAp.Text + "','" + txtNomAp.Text + "', '" + txtAp2P.Text + "', '" + txtAp2M.Text + "', '" + fecNacAp.Text + "', '" + txtDomAp.Text + "', '" + txtHijosAp.Text + "', '" + txtTelAp.Text + "','" + txtOcup.Text + "', '" + txtNivEd.Text + "', '" + txtCiud.Text + "', '" + txtNac.Text + "',   '" + txtVinc.Text + "')";
 
                     MySqlCommand cmd = new MySqlCommand(sql, cn.getconex());
                     int N = cmd.ExecuteNonQuery();
@@ -65,8 +65,8 @@ namespace ClubdeConquis
             }
             else
             {
-                txtRutInt.Focus();
-                txtRutInt.SelectAll();
+                txtRutAp.Focus();
+                txtNomAp.SelectAll();
                 MessageBox.Show("faltan campos");
             }
         }

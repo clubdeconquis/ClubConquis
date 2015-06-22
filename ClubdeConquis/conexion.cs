@@ -16,7 +16,7 @@ namespace ClubdeConquis
             try
             {
                 MySqlConnection cnx = new MySqlConnection();
-                cnx.ConnectionString = "Server=localhost; Database=mydb ;User id=root;Password='root' ";
+                cnx.ConnectionString = "Server=localhost; Database=mydb ;User id=root;Password='' ";
                 cnx.Open();
                 return cnx;
             }

@@ -33,16 +33,16 @@
             this.inasistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suspensionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.capacitacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.apoderadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.beneficiarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.capacitacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.capacitacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.capacitacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             // 
             this.inasistenciaToolStripMenuItem.Name = "inasistenciaToolStripMenuItem";
             this.inasistenciaToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.inasistenciaToolStripMenuItem.Text = "Inasistencia";
+            this.inasistenciaToolStripMenuItem.Text = "Asistencia";
             // 
             // suspensionesToolStripMenuItem
             // 
@@ -87,6 +87,12 @@
             this.salidasToolStripMenuItem.Name = "salidasToolStripMenuItem";
             this.salidasToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.salidasToolStripMenuItem.Text = "Salidas";
+            // 
+            // capacitacionesToolStripMenuItem1
+            // 
+            this.capacitacionesToolStripMenuItem1.Name = "capacitacionesToolStripMenuItem1";
+            this.capacitacionesToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.capacitacionesToolStripMenuItem1.Text = "Capacitaciones";
             // 
             // agregarToolStripMenuItem
             // 
@@ -131,6 +137,12 @@
             this.beneficiarioToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.beneficiarioToolStripMenuItem.Text = "Beneficiario";
             // 
+            // capacitacionesToolStripMenuItem
+            // 
+            this.capacitacionesToolStripMenuItem.Name = "capacitacionesToolStripMenuItem";
+            this.capacitacionesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.capacitacionesToolStripMenuItem.Text = "Capacitaciones";
+            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
@@ -142,18 +154,6 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.salirToolStripMenuItem.Text = "Salir";
-            // 
-            // capacitacionesToolStripMenuItem
-            // 
-            this.capacitacionesToolStripMenuItem.Name = "capacitacionesToolStripMenuItem";
-            this.capacitacionesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.capacitacionesToolStripMenuItem.Text = "Capacitaciones";
-            // 
-            // capacitacionesToolStripMenuItem1
-            // 
-            this.capacitacionesToolStripMenuItem1.Name = "capacitacionesToolStripMenuItem1";
-            this.capacitacionesToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
-            this.capacitacionesToolStripMenuItem1.Text = "Capacitaciones";
             // 
             // Actividades
             // 

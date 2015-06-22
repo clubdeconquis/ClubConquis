@@ -10,25 +10,20 @@ using MySql.Data.MySqlClient;
 
 namespace ClubdeConquis
 {
-    public partial class Integrante : Form
+    public partial class Apoderado : Form
     {
-        public Integrante()
+        public Apoderado()
         {
             InitializeComponent();
         }
-
-       
-        //Validar que los campos no esten vacios
-        
         private bool valida()
         {
 
             try
             {
-                if (txtNomInt.Text == "")
+                if (txtRutAp.Text == "")
                     return false;
-                if (txtRutInt.Text == "")
-                    return false;
+              
                 return true;
             }
             catch (Exception)
@@ -37,20 +32,19 @@ namespace ClubdeConquis
                 return false;
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             if (valida())
             {
-                
+
                 //MySqlConnection con; 
                 conexion cn = new conexion();
                 try
                 {
 
-                    string sql = "INSERT INTO integrante(rutAl,nombre, apellidoPat, apellidoMat, direccion, fechaNac, tel, activo)VALUES('" + txtRutInt.Text + "','" + txtNomInt.Text + "', '" + txtApPInt.Text + "', '" + txtApMInt.Text + "', '" + txtDom.Text + "', '" + fechNacInt.Text + "', '" + txtTelInt.Text + "', '" + txtActivo.Text + "')";
-                    
+                    string sql = "INSERT INTO apoderadop(rutApP,nombre, apellidoPat, apellidoMat,fechaNac , direccion,cantHijos, tel, ocupacion, NivelEd, ciudadPro, nacionalidad, vinculofam)VALUES('" + txtRutInt.Text + "','" + txtNomInt.Text + "', '" + txtApPInt.Text + "', '" + txtApMInt.Text + "', '" + txtDom.Text + "', '" + fechNacInt.Text + "', '" + txtTelInt.Text + "', '" + txtActivo.Text + "')";
+
                     MySqlCommand cmd = new MySqlCommand(sql, cn.getconex());
                     int N = cmd.ExecuteNonQuery();
 
@@ -75,18 +69,6 @@ namespace ClubdeConquis
                 txtRutInt.SelectAll();
                 MessageBox.Show("faltan campos");
             }
-        }
-        //Funcion para modificar la fecha de DateTimePicker
-        /**private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-            fechNacInt.Format = DateTimePickerFormat.Custom;
-            // Display the date as "Mon 26 Feb 2001".
-            fechNacInt.CustomFormat = "yyyy MMM dd";
-        }
-        **/
-        private void Integrante_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

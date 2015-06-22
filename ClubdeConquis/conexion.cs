@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace ClubdeConquis
 {
-    class conexion
+    public class conexion
     {
         public MySqlConnection getconex()
         {
@@ -16,7 +16,7 @@ namespace ClubdeConquis
             try
             {
                 MySqlConnection cnx = new MySqlConnection();
-                cnx.ConnectionString = "Server=localhost; Database=mydb ;User id=root;Password='' ";
+                cnx.ConnectionString = "Server=localhost; Database=mydb; Uid=root; Password='' ";
                 cnx.Open();
                 return cnx;
             }

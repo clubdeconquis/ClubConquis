@@ -53,6 +53,12 @@
     <Compile Include="Actividades.Designer.cs">
       <DependentUpon>Actividades.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apoderado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apoderado.Designer.cs">
+      <DependentUpon>Apoderado.cs</DependentUpon>
+    </Compile>
     <Compile Include="conexion.cs" />
     <Compile Include="Guia.cs">
       <SubType>Form</SubType>
@@ -66,6 +72,8 @@
     <Compile Include="Integrante.Designer.cs">
       <DependentUpon>Integrante.cs</DependentUpon>
     </Compile>
+    <Compile Include="IntegranteClass.cs" />
+    <Compile Include="IntegranteDal.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,8 +82,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pruebaconex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pruebaconex.Designer.cs">
+      <DependentUpon>pruebaconex.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Actividades.resx">
       <DependentUpon>Actividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apoderado.resx">
+      <DependentUpon>Apoderado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Guia.resx">
       <DependentUpon>Guia.cs</DependentUpon>
@@ -95,6 +112,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="pruebaconex.resx">
+      <DependentUpon>pruebaconex.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

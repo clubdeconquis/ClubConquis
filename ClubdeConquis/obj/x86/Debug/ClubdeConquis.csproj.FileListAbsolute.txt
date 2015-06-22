@@ -9,3 +9,4 @@ C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConq
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.Actividades.resources
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.Integrante.resources
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.Guia.resources
+C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.pruebaconex.resources

@@ -7,21 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
 namespace ClubdeConquis
 {
-    public partial class Guia : Form
+    public partial class Unidad : Form
     {
-        public Guia()
+        public Unidad()
         {
             InitializeComponent();
+        }
+
+        private void Unidad_Load(object sender, EventArgs e)
+        {
+        
         }
         private bool valida()
         {
 
             try
             {
-                if (txtNomG.Text == "")
+                if (txtNom.Text == "")
                     return false;
 
                 return true;
@@ -36,14 +40,14 @@ namespace ClubdeConquis
         {
             if (valida())
             {
-                
-                //MySqlConnection con; 
+
+         
                 conexion cn = new conexion();
                 try
                 {
 
-                    string sql = "INSERT INTO guia(rutGuia,nombre, apellidoPat, apellidoMat, fechaNac, direccion, tel, activo)VALUES('" + masktxtRutG.MaskedTextProvider+ "','" + txtNomG.Text + "', '" + txtApPG.Text + "', '" + txtApMG.Text + "', '" + txtDomG.Text + "', '" + dTPFecNacG.Text+ "', '" + txtTelG.Text + "', '" + txtActivoG.Text + "')";
-                    
+                    string sql = "INSERT INTO unidad(nombre, activo, fk_guia_rutguia)VALUES('" + txtNom.Text + "','" + txtAct.Text + "', '" + maskTxtRutGuia.Text + "')";
+
                     MySqlCommand cmd = new MySqlCommand(sql, cn.getconex());
                     int N = cmd.ExecuteNonQuery();
 
@@ -64,16 +68,11 @@ namespace ClubdeConquis
             }
             else
             {
-                txtNomG.Focus();
-                txtNomG.SelectAll();
+                txtNom.Focus();
+                txtNom.SelectAll();
                 MessageBox.Show("faltan campos");
             }
-        }
-
-        private void masktxtRutG_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
+        
         }
     }
-
+}

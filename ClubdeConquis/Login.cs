@@ -35,7 +35,7 @@ namespace ClubdeConquis
             {
 
                 DataTable dt = new DataTable();
-                string sql = "select * FROM inspector where nombre = '" + txtNombre.Text + "' and clave =  '" + txtClave.Text + "'";
+                string sql = "select * FROM usuario where nombre = '" + txtNombre.Text + "' and rutUser =  '" + txtClave.Text + "'";
                 MySqlDataAdapter da = new MySqlDataAdapter(sql, cnx.getconex());
                 int n = da.Fill(dt);
                 // dt.Rows[0].ToString();
@@ -56,11 +56,11 @@ namespace ClubdeConquis
 
                     }
 
-                    MessageBox.Show("Bienvenido a School Manager");
+                    MessageBox.Show("Bienvenido a Qadoshim Manager");
                     this.Hide();
-                    //Eventos f1 = new Eventos();
+                    Actividades A1 = new Actividades();
 
-                   // f1.ShowDialog();
+                   A1.ShowDialog();
 
 
                 }

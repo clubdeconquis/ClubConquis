@@ -7,12 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
 namespace ClubdeConquis
 {
-    public partial class Guia : Form
+    public partial class Alergias : Form
     {
-        public Guia()
+        public Alergias()
         {
             InitializeComponent();
         }
@@ -21,9 +20,8 @@ namespace ClubdeConquis
 
             try
             {
-                if (txtNomG.Text == "")
+                if (txtDesc.Text == "")
                     return false;
-
                 return true;
             }
             catch (Exception)
@@ -36,14 +34,14 @@ namespace ClubdeConquis
         {
             if (valida())
             {
-                
-                //MySqlConnection con; 
+
+
                 conexion cn = new conexion();
                 try
                 {
 
-                    string sql = "INSERT INTO guia(rutGuia,nombre, apellidoPat, apellidoMat, fechaNac, direccion, tel, activo)VALUES('" + masktxtRutG.MaskedTextProvider+ "','" + txtNomG.Text + "', '" + txtApPG.Text + "', '" + txtApMG.Text + "', '" + txtDomG.Text + "', '" + dTPFecNacG.Text+ "', '" + txtTelG.Text + "', '" + txtActivoG.Text + "')";
-                    
+                    string sql = "INSERT INTO alergias(tipo, descripcion, Integrante_idIntegrante)VALUES('" + txtTipo.Text + "','" + txtDesc.Text + "','" + txtFkRut.Text + "')";
+
                     MySqlCommand cmd = new MySqlCommand(sql, cn.getconex());
                     int N = cmd.ExecuteNonQuery();
 
@@ -58,22 +56,17 @@ namespace ClubdeConquis
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Esta enviando dos veces los mismos datos");
+                    //Puede que los datos se envien dos veces, a lo que entraria en este catch
+                    MessageBox.Show("Esta enviando dos veces los mismos datos o existe otro error");
                     throw;
                 }
             }
             else
             {
-                txtNomG.Focus();
-                txtNomG.SelectAll();
+                txtDesc.Focus();
+                txtDesc.SelectAll();
                 MessageBox.Show("faltan campos");
             }
         }
-
-        private void masktxtRutG_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-        }
     }
-
+}

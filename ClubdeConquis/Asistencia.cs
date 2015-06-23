@@ -10,9 +10,9 @@ using MySql.Data.MySqlClient;
 
 namespace ClubdeConquis
 {
-    public partial class Guia : Form
+    public partial class Asistencia : Form
     {
-        public Guia()
+        public Asistencia()
         {
             InitializeComponent();
         }
@@ -21,7 +21,7 @@ namespace ClubdeConquis
 
             try
             {
-                if (txtNomG.Text == "")
+                if (txtRut.Text == "")
                     return false;
 
                 return true;
@@ -36,14 +36,14 @@ namespace ClubdeConquis
         {
             if (valida())
             {
+
                 
-                //MySqlConnection con; 
                 conexion cn = new conexion();
                 try
                 {
 
-                    string sql = "INSERT INTO guia(rutGuia,nombre, apellidoPat, apellidoMat, fechaNac, direccion, tel, activo)VALUES('" + masktxtRutG.MaskedTextProvider+ "','" + txtNomG.Text + "', '" + txtApPG.Text + "', '" + txtApMG.Text + "', '" + txtDomG.Text + "', '" + dTPFecNacG.Text+ "', '" + txtTelG.Text + "', '" + txtActivoG.Text + "')";
-                    
+                    string sql = "INSERT INTO inasistencia(cantidad,fecha, integrante_idIntegrante)VALUES ('" + txtValor.Text + "','" + txtFecha.Text + "', '" + txtRut.Text + "')";
+
                     MySqlCommand cmd = new MySqlCommand(sql, cn.getconex());
                     int N = cmd.ExecuteNonQuery();
 
@@ -64,16 +64,10 @@ namespace ClubdeConquis
             }
             else
             {
-                txtNomG.Focus();
-                txtNomG.SelectAll();
+                txtRut.Focus();
+                txtRut.SelectAll();
                 MessageBox.Show("faltan campos");
             }
         }
-
-        private void masktxtRutG_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-        }
     }
-
+}

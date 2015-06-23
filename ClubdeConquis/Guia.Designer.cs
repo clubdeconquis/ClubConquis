@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dTPFecNacG = new System.Windows.Forms.DateTimePicker();
+            this.masktxtRutG = new System.Windows.Forms.MaskedTextBox();
+            this.txtActivoG = new System.Windows.Forms.TextBox();
+            this.txtTelG = new System.Windows.Forms.TextBox();
+            this.txtDomG = new System.Windows.Forms.TextBox();
+            this.txtApMG = new System.Windows.Forms.TextBox();
+            this.txtApPG = new System.Windows.Forms.TextBox();
+            this.txtNomG = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,72 +47,73 @@
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // dTPFecNacG
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(74, 178);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 33;
+            this.dTPFecNacG.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dTPFecNacG.Location = new System.Drawing.Point(74, 178);
+            this.dTPFecNacG.Name = "dTPFecNacG";
+            this.dTPFecNacG.Size = new System.Drawing.Size(100, 20);
+            this.dTPFecNacG.TabIndex = 33;
             // 
-            // maskedTextBox1
+            // masktxtRutG
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(74, 42);
-            this.maskedTextBox1.Mask = "00000000-0";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 32;
+            this.masktxtRutG.Location = new System.Drawing.Point(74, 42);
+            this.masktxtRutG.Mask = "00000000-0";
+            this.masktxtRutG.Name = "masktxtRutG";
+            this.masktxtRutG.Size = new System.Drawing.Size(100, 20);
+            this.masktxtRutG.TabIndex = 32;
+            this.masktxtRutG.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.masktxtRutG_MaskInputRejected);
             // 
-            // textBox8
+            // txtActivoG
             // 
-            this.textBox8.Location = new System.Drawing.Point(74, 232);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 31;
+            this.txtActivoG.Location = new System.Drawing.Point(74, 232);
+            this.txtActivoG.Name = "txtActivoG";
+            this.txtActivoG.Size = new System.Drawing.Size(23, 20);
+            this.txtActivoG.TabIndex = 31;
             // 
-            // textBox7
+            // txtTelG
             // 
-            this.textBox7.Location = new System.Drawing.Point(74, 205);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 30;
+            this.txtTelG.Location = new System.Drawing.Point(74, 205);
+            this.txtTelG.Name = "txtTelG";
+            this.txtTelG.Size = new System.Drawing.Size(100, 20);
+            this.txtTelG.TabIndex = 30;
             // 
-            // textBox5
+            // txtDomG
             // 
-            this.textBox5.Location = new System.Drawing.Point(74, 151);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 29;
+            this.txtDomG.Location = new System.Drawing.Point(74, 151);
+            this.txtDomG.Name = "txtDomG";
+            this.txtDomG.Size = new System.Drawing.Size(100, 20);
+            this.txtDomG.TabIndex = 29;
             // 
-            // textBox4
+            // txtApMG
             // 
-            this.textBox4.Location = new System.Drawing.Point(74, 124);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 28;
+            this.txtApMG.Location = new System.Drawing.Point(74, 124);
+            this.txtApMG.Name = "txtApMG";
+            this.txtApMG.Size = new System.Drawing.Size(100, 20);
+            this.txtApMG.TabIndex = 28;
             // 
-            // textBox3
+            // txtApPG
             // 
-            this.textBox3.Location = new System.Drawing.Point(74, 97);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 27;
+            this.txtApPG.Location = new System.Drawing.Point(74, 97);
+            this.txtApPG.Name = "txtApPG";
+            this.txtApPG.Size = new System.Drawing.Size(100, 20);
+            this.txtApPG.TabIndex = 27;
             // 
-            // textBox2
+            // txtNomG
             // 
-            this.textBox2.Location = new System.Drawing.Point(74, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 26;
+            this.txtNomG.Location = new System.Drawing.Point(74, 68);
+            this.txtNomG.Name = "txtNomG";
+            this.txtNomG.Size = new System.Drawing.Size(100, 20);
+            this.txtNomG.TabIndex = 26;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(16, 232);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 13);
+            this.label8.Size = new System.Drawing.Size(37, 13);
             this.label8.TabIndex = 25;
-            this.label8.Text = "Unidad";
+            this.label8.Text = "Activo";
             // 
             // label7
             // 
@@ -193,14 +194,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 355);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.dTPFecNacG);
+            this.Controls.Add(this.masktxtRutG);
+            this.Controls.Add(this.txtActivoG);
+            this.Controls.Add(this.txtTelG);
+            this.Controls.Add(this.txtDomG);
+            this.Controls.Add(this.txtApMG);
+            this.Controls.Add(this.txtApPG);
+            this.Controls.Add(this.txtNomG);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -218,14 +219,14 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.DateTimePicker dTPFecNacG;
+        private System.Windows.Forms.MaskedTextBox masktxtRutG;
+        private System.Windows.Forms.TextBox txtActivoG;
+        private System.Windows.Forms.TextBox txtTelG;
+        private System.Windows.Forms.TextBox txtDomG;
+        private System.Windows.Forms.TextBox txtApMG;
+        private System.Windows.Forms.TextBox txtApPG;
+        private System.Windows.Forms.TextBox txtNomG;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

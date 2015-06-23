@@ -10,9 +10,9 @@ using MySql.Data.MySqlClient;
 
 namespace ClubdeConquis
 {
-    public partial class Guia : Form
+    public partial class Periodo : Form
     {
-        public Guia()
+        public Periodo()
         {
             InitializeComponent();
         }
@@ -21,10 +21,9 @@ namespace ClubdeConquis
 
             try
             {
-                if (txtNomG.Text == "")
+                if (txtPeriodo.Text == "")
                     return false;
-
-                return true;
+                    return true;
             }
             catch (Exception)
             {
@@ -36,14 +35,14 @@ namespace ClubdeConquis
         {
             if (valida())
             {
-                
-                //MySqlConnection con; 
+
+
                 conexion cn = new conexion();
                 try
                 {
 
-                    string sql = "INSERT INTO guia(rutGuia,nombre, apellidoPat, apellidoMat, fechaNac, direccion, tel, activo)VALUES('" + masktxtRutG.MaskedTextProvider+ "','" + txtNomG.Text + "', '" + txtApPG.Text + "', '" + txtApMG.Text + "', '" + txtDomG.Text + "', '" + dTPFecNacG.Text+ "', '" + txtTelG.Text + "', '" + txtActivoG.Text + "')";
-                    
+                    string sql = "INSERT INTO periodo(periodo, año)VALUES('" + txtPeriodo.Text + "','" + txtAno.Text + "')";
+
                     MySqlCommand cmd = new MySqlCommand(sql, cn.getconex());
                     int N = cmd.ExecuteNonQuery();
 
@@ -58,22 +57,17 @@ namespace ClubdeConquis
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Esta enviando dos veces los mismos datos");
+                    //Puede que los datos se envien dos veces, a lo que entraria en este catch
+                    MessageBox.Show("Esta enviando dos veces los mismos datos o existe otro error");
                     throw;
                 }
             }
             else
             {
-                txtNomG.Focus();
-                txtNomG.SelectAll();
+                txtPeriodo.Focus();
+                txtPeriodo.SelectAll();
                 MessageBox.Show("faltan campos");
             }
         }
-
-        private void masktxtRutG_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-        }
     }
-
+}

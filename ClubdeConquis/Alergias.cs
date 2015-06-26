@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+
+
 namespace ClubdeConquis
 {
     public partial class Alergias : Form

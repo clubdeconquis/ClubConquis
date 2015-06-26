@@ -16,6 +16,19 @@ namespace ClubdeConquis
         {
             InitializeComponent();
         }
+
+        public static void Limpiar(Form ofrm)
+        {
+            // Checar todos los textbox del formulario
+            foreach (Control oControls in ofrm.Controls)
+            {
+                if (oControls is TextBox)
+                {
+                    oControls.Text = ""; // Eliminar el texto del TextBox
+                }
+            }
+        }
+
         private bool valida()
         {
 
@@ -23,7 +36,7 @@ namespace ClubdeConquis
             {
                 if (txtRutAp.Text == "")
                     return false;
-              
+
                 return true;
             }
             catch (Exception)
@@ -69,6 +82,13 @@ namespace ClubdeConquis
                 txtNomAp.SelectAll();
                 MessageBox.Show("faltan campos");
             }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+
+            // Llamar la función Limpiar
+            Limpiar(this);
         }
     }
 }

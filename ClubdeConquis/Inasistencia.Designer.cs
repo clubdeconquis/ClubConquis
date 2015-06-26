@@ -1,6 +1,6 @@
 ﻿namespace ClubdeConquis
 {
-    partial class Asistencia
+    partial class Inasistencia
     {
         /// <summary>
         /// Required designer variable.

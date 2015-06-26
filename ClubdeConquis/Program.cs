@@ -15,7 +15,7 @@ namespace ClubdeConquis
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Unidad());
+            Application.Run(new Asistencias());
         }
     }
 }

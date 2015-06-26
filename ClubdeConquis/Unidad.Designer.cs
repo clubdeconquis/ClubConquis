@@ -35,6 +35,7 @@
             this.txtAct = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.maskTxtRutGuia = new System.Windows.Forms.MaskedTextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,7 +81,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(161, 157);
+            this.button1.Location = new System.Drawing.Point(177, 212);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -91,16 +92,27 @@
             // maskTxtRutGuia
             // 
             this.maskTxtRutGuia.Location = new System.Drawing.Point(75, 66);
-            this.maskTxtRutGuia.Mask = "0000000-0";
+            this.maskTxtRutGuia.Mask = "000000000";
             this.maskTxtRutGuia.Name = "maskTxtRutGuia";
             this.maskTxtRutGuia.Size = new System.Drawing.Size(100, 20);
             this.maskTxtRutGuia.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(23, 212);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Unidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.maskTxtRutGuia);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtAct);
@@ -125,5 +137,6 @@
         private System.Windows.Forms.TextBox txtAct;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MaskedTextBox maskTxtRutGuia;
+        private System.Windows.Forms.Button button2;
     }
 }

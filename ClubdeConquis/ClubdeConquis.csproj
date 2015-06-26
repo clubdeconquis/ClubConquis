@@ -65,11 +65,29 @@
     <Compile Include="Apoderado.Designer.cs">
       <DependentUpon>Apoderado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Asistencia.cs">
+    <Compile Include="Asistencias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Asistencia.Designer.cs">
-      <DependentUpon>Asistencia.cs</DependentUpon>
+    <Compile Include="Asistencias.Designer.cs">
+      <DependentUpon>Asistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cbprueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cbprueba.Designer.cs">
+      <DependentUpon>cbprueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inasistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inasistencia.Designer.cs">
+      <DependentUpon>Inasistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BIntegrante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BIntegrante.Designer.cs">
+      <DependentUpon>BIntegrante.cs</DependentUpon>
     </Compile>
     <Compile Include="conexion.cs" />
     <Compile Include="Guia.cs">
@@ -84,13 +102,16 @@
     <Compile Include="Integrante.Designer.cs">
       <DependentUpon>Integrante.cs</DependentUpon>
     </Compile>
-    <Compile Include="IntegranteClass.cs" />
-    <Compile Include="IntegranteDal.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mydbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Periodo.cs">
       <SubType>Form</SubType>
@@ -106,11 +127,35 @@
     <Compile Include="pruebaconex.Designer.cs">
       <DependentUpon>pruebaconex.cs</DependentUpon>
     </Compile>
+    <Compile Include="Responsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Responsable.Designer.cs">
+      <DependentUpon>Responsable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salidas.Designer.cs">
+      <DependentUpon>Salidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suspensiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suspensiones.Designer.cs">
+      <DependentUpon>Suspensiones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unidad.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Unidad.Designer.cs">
       <DependentUpon>Unidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Actividades.resx">
       <DependentUpon>Actividades.cs</DependentUpon>
@@ -121,8 +166,17 @@
     <EmbeddedResource Include="Apoderado.resx">
       <DependentUpon>Apoderado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Asistencia.resx">
-      <DependentUpon>Asistencia.cs</DependentUpon>
+    <EmbeddedResource Include="Asistencias.resx">
+      <DependentUpon>Asistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cbprueba.resx">
+      <DependentUpon>cbprueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inasistencia.resx">
+      <DependentUpon>Inasistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BIntegrante.resx">
+      <DependentUpon>BIntegrante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Guia.resx">
       <DependentUpon>Guia.cs</DependentUpon>
@@ -144,13 +198,39 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="pruebaconex.resx">
       <DependentUpon>pruebaconex.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Responsable.resx">
+      <DependentUpon>Responsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salidas.resx">
+      <DependentUpon>Salidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suspensiones.resx">
+      <DependentUpon>Suspensiones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Unidad.resx">
       <DependentUpon>Unidad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.resx">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="mydbDataSet.xsc">
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mydbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mydbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mydbDataSet.xss">
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -160,6 +240,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo club.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

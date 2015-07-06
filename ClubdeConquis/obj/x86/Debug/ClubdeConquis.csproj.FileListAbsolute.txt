@@ -1,3 +1,6 @@
+C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\bin\Debug\ClubdeConquis.exe.config
+C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\bin\Debug\ClubdeConquis.exe
+C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\bin\Debug\ClubdeConquis.pdb
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.Actividades.resources
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.Alergias.resources
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.Apoderado.resources
@@ -17,8 +20,7 @@ C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConq
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.Unidad.resources
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.Usuario.resources
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.csproj.GenerateResource.Cache
-C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\bin\Debug\ClubdeConquis.exe.config
-C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\bin\Debug\ClubdeConquis.exe
-C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\bin\Debug\ClubdeConquis.pdb
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.exe
 C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.pdb
+C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.csprojResolveAssemblyReference.cache
+C:\Users\dominus7\Documents\Visual Studio 2010\Projects\ClubdeConquis\ClubdeConquis\obj\x86\Debug\ClubdeConquis.BAlergias.resources

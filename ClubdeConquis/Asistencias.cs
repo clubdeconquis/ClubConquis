@@ -119,18 +119,19 @@ namespace ClubdeConquis
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            string a = comboBoxUnidad.SelectedValue.ToString();
-            MySqlDataAdapter da;
-            if (comboBoxUnidad.SelectedValue.ToString() != "0")
-            {
-               /** da = new MySqlDataAdapter("SELECT * FROM integrante WHERE fkUnidad= '"++"' "), cnx);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                /dGV.DataSource = ds.Tables[0];
-                **/
-            }
+            /**"select * FROM alergias WHERE tipo= '" + txtRut.Text + "' or Integrante_idIntegrante= '" + txtAlergia.Text + "' ", cnx
+              string a = comboBoxUnidad.SelectedValue.ToString("select * FROM integrante WHERE fk_idUnidad =()", cnx);
+              MySqlDataAdapter da;
+              if (comboBoxUnidad.SelectedValue.ToString() != "0")
+              {
+                da = new MySqlDataAdapter();
+                  DataSet ds = new DataSet();
+                  da.Fill(ds);
+                  dGV.DataSource = ds.Tables[0];
+               **/
+        }
                 
                 
         }
     }
-}
+

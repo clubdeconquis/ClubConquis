@@ -18,7 +18,7 @@ namespace ClubdeConquis
 
         private void inasistenciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Inasistencia In = new Inasistencia();
+            Asistencias In= new Asistencias ();
             In.MdiParent = this;
             In.Show();
         }

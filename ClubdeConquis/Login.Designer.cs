@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBoxLogin = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.labelPass = new System.Windows.Forms.Label();
             this.labelUser = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,13 +57,32 @@
             this.groupBoxLogin.Text = "Qadoshim";
             this.groupBoxLogin.Enter += new System.EventHandler(this.groupBoxLogin_Enter);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ClubdeConquis.Properties.Resources.logo_club;
+            this.pictureBox1.Location = new System.Drawing.Point(135, 164);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(249, 203);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Magneto", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(39, 70);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(461, 48);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Qadoshim Asistente";
+            // 
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(466, 10);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Login";
+            this.btnLogin.Text = "Ingresar";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -86,37 +105,18 @@
             this.labelPass.AutoSize = true;
             this.labelPass.Location = new System.Drawing.Point(303, 17);
             this.labelPass.Name = "labelPass";
-            this.labelPass.Size = new System.Drawing.Size(53, 13);
+            this.labelPass.Size = new System.Drawing.Size(61, 13);
             this.labelPass.TabIndex = 1;
-            this.labelPass.Text = "Password";
+            this.labelPass.Text = "Contraseña";
             // 
             // labelUser
             // 
             this.labelUser.AutoSize = true;
             this.labelUser.Location = new System.Drawing.Point(162, 20);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(29, 13);
+            this.labelUser.Size = new System.Drawing.Size(43, 13);
             this.labelUser.TabIndex = 0;
-            this.labelUser.Text = "User";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Magneto", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 48);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Qadoshim Manager";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ClubdeConquis.Properties.Resources.logo_club;
-            this.pictureBox1.Location = new System.Drawing.Point(135, 164);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 203);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.labelUser.Text = "Usuario";
             // 
             // Login
             // 
